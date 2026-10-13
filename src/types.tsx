@@ -3,3 +3,9 @@ export interface ICategoryType {
     title: string,
     scrapable: string
 }
+
+export interface IhadelineType {
+    id: string,
+    title: string,
+    description: string,
+}

@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Header/Navbar";
 import CategoryMeno from "@/components/Header/CategoryMeno";
+import MarqueeNewsHadeline from "@/components/Header/MarqueeNewsHadeline";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
         <Navbar></Navbar>
         <CategoryMeno></CategoryMeno>
+        <MarqueeNewsHadeline></MarqueeNewsHadeline>
         <main>
           {children}
         </main>
